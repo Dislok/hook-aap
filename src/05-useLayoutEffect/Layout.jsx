@@ -1,10 +1,10 @@
 import { useCounter, useFetchs } from "../hooks";
-import { Ima } from "./Ima";
-import { Loading } from "./Loading";
+import { Ima } from "../03-examples/Ima";
+import { Loading } from "../03-examples/Loading";
 
 
 useCounter
-export const MultipleCustomHooks = () => {
+export const Layout = () => {
   const {contador,incrementar, reducir,recetear} = useCounter(1);
     const {data, isLoading, hasError} = useFetchs(`https://rickandmortyapi.com/api/character/${contador}`);
     
